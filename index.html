@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reliant Anchor Foundation | Simplicity & Impact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .text-navy {
+      color: #0f172a;
+    }
+
+    .bg-navy {
+      background-color: #0f172a;
+    }
+
+    .text-gold {
+      color: #b59410;
+    }
+
+    .bg-gold {
+      background-color: #b59410;
+    }
+
+    .border-gold {
+      border-color: #b59410;
+    }
+
+    .section-padding {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    .nav-link:hover {
+      color: #b59410;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased">
+  <!-- Minimal Navigation -->
+  <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 py-5">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <a href="#" class="flex items-center space-x-2">
+        <img src="assets/LOGO.jpeg" alt="Reliant Anchor Foundation Logo" class="h-20 w-auto" />
+      </a>
+      <!-- Hamburger Button (visible on mobile) -->
+      <button id="nav-toggle" class="md:hidden text-navy focus:outline-none text-2xl" aria-label="Open Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex space-x-10 text-xs font-medium uppercase tracking-widest text-slate-500">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#programs" class="nav-link">Programs</a>
+        <a href="#leadership" class="nav-link">Leadership</a>
+        <a href="#partners" class="nav-link">Partners</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+    <!-- Mobile Nav (hidden by default) -->
+    <div id="mobile-nav"
+      class="md:hidden hidden bg-white/95 border-t border-slate-100 px-6 py-4 space-y-4 text-xs font-medium uppercase tracking-widest text-slate-500">
+      <a href="#about" class="block nav-link">About</a>
+      <a href="#programs" class="block nav-link">Programs</a>
+      <a href="#leadership" class="block nav-link">Leadership</a>
+      <a href="#partners" class="block nav-link">Partners</a>
+      <a href="#contact" class="block nav-link">Contact</a>
+    </div>
+  </nav>
+  <script>
+    // Simple nav toggle for mobile
+    const navToggle = document.getElementById("nav-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+    navToggle.addEventListener("click", () => {
+      mobileNav.classList.toggle("hidden");
+    });
+  </script>
+
+  <!-- Simple Hero -->
+  <section <!-- class="min-h-screen flex items-center bg-slate-50 border-b border-slate-100" -->
+    <section class="min-h-screen flex items-center bg-slate-50 border-b border-slate-100 pt-24"></section>
+
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl">
+        <span class="text-gold font-bold text-sm uppercase tracking-wide mb-6 block mt-4">
+          Foundation Profile
+        </span>
+        <h1 class="text-5xl md:text-7xl font-bold text-navy leading-[1.1] mb-4">
+          Empowering the <br />
+          <span class="text-gold">Industrial Backbone</span> of Nigeria.
+        </h1>
+        <p class="text-xl text-slate-500 leading-relaxed mb-12 max-w-2xl">
+          We provide technical education and scholarship opportunities for
+          youth in the transport, logistics, and maritime sectors.
+        </p>
+        <a href="#programs" class="inline-flex items-center space-x-4 group">
+          <span class="w-12 h-[1px] bg-navy group-hover:w-20 transition-all duration-300"></span>
+          <span class="text-sm font-bold uppercase tracking-widest text-navy">Explore 2026 Programs</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-4">
+          <h2 class="text-3xl font-bold text-navy">The Foundation</h2>
+        </div>
+        <div class="md:col-span-8 space-y-8 text-lg text-slate-600 leading-relaxed">
+          <p>
+            Reliant Anchor Foundation (IT: 8437902) is a dedicated non-profit
+            focused on inclusive educational opportunities. Our vision is to
+            break the cycle of poverty by equipping individuals with technical
+            skills necessary to contribute meaningfully to Nigeria's
+            development.
+          </p>
+          <div class="grid md:grid-cols-2 gap-12 pt-8 border-t border-slate-100">
+            <div>
+              <h3 class="text-sm font-bold uppercase tracking-widest text-gold mb-4">
+                Aim
+              </h3>
+              <p class="text-sm">
+                To provide accessible and inclusive educational opportunities
+                for underprivileged individuals in Nigeria, focusing on
+                logistics and IT.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold uppercase tracking-widest text-gold mb-4">
+                Values
+              </h3>
+              <p class="text-sm">
+                Equality, empowerment, and industrial excellence through
+                quality education and essential learning resources.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs & Scholarships Section -->
+  <section id="programs" class="section-padding bg-slate-50 border-y border-slate-200">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-16 text-center sm:text-left">
+        <h2 class="text-4xl sm:text-5xl font-bold text-navy mb-3">Programs & Scholarships</h2>
+        <p class="text-slate-600 uppercase text-sm tracking-widest font-semibold">
+          2026 Calendar & Educational Empowerment
+        </p>
+      </div>
+
+      <div class="space-y-8">
+
+        <!-- Section Title -->
+        <h3 class="text-2xl font-bold uppercase tracking-wider text-navy border-b-2 border-gold pb-3 inline-block">
+          Core Focus Areas
+        </h3>
+
+        <!-- Training Cards Row -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Logistics & Supply Chain -->
+          <div
+            class="flex flex-col justify-between p-8 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition">
+            <div>
+              <h4 class="font-bold text-navy text-xl mb-3">
+                Logistics & Supply Chain
+              </h4>
+              <p class="text-slate-600 text-base leading-relaxed">
+                Advanced training in maritime logistics, freight operations,
+                and national distribution systems.
+              </p>
+            </div>
+
+            <a href="/programs/logistics"
+              class="mt-8 inline-flex items-center gap-2 text-gold font-semibold text-sm group">
+              Learn More
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Information Technology -->
+          <div
+            class="flex flex-col justify-between p-8 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition">
+            <div>
+              <h4 class="font-bold text-navy text-xl mb-3">
+                Information Technology
+              </h4>
+              <p class="text-slate-600 text-base leading-relaxed">
+                Software development, data systems, cybersecurity,
+                and digital literacy for modern industries.
+              </p>
+            </div>
+
+            <a href="/programs/information-technology"
+              class="mt-8 inline-flex items-center gap-2 text-gold font-semibold text-sm group">
+              Learn More
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Maritime Studies -->
+          <div
+            class="flex flex-col justify-between p-8 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition">
+            <div>
+              <h4 class="font-bold text-navy text-xl mb-3">
+                Maritime Studies
+              </h4>
+              <p class="text-slate-600 text-base leading-relaxed">
+                Technical capacity building for Nigeria’s blue economy,
+                port operations, and maritime safety.
+              </p>
+            </div>
+
+            <a href="/programs/maritime-studies"
+              class="mt-8 inline-flex items-center gap-2 text-gold font-semibold text-sm group">
+              Learn More
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- 2026 Program Spotlight Slider -->
+      <section class="mt-24">
+        <div class="relative overflow-hidden">
+
+          <!-- Slides Wrapper -->
+          <div id="programSlider" class="flex transition-transform duration-500 ease-in-out">
+
+            <!-- Slide 1 -->
+            <div class="min-w-full px-2">
+              <div class="bg-navy p-10 rounded-lg text-white">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-8">
+                  <div class="max-w-2xl">
+                    <span class="text-gold font-bold text-[10px] uppercase tracking-[0.4em] mb-4 block">
+                      First Program of 2026
+                    </span>
+                    <h3 class="text-2xl font-bold mb-4">
+                      Truck Safety Awareness Program
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                      A specialized 1-day intensive workshop focused on enhancing
+                      operational safety standards, risk mitigation, and driver
+                      wellness within the heavy-duty transport industry.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                      <span class="text-[10px] font-bold uppercase px-3 py-1 bg-white/10 rounded">
+                        Reliant Anchor Logistics Ltd
+                      </span>
+                      <span class="text-[10px] font-bold uppercase px-3 py-1 bg-white/10 rounded text-gold">
+                        Bongas Synergy Ltd
+                      </span>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <p class="text-4xl font-bold text-gold mb-1 italic">2026</p>
+                    <p class="text-[10px] uppercase tracking-widest text-slate-400">
+                      Quarter 1 Kickoff
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 (Duplicate – example future program) -->
+            <div class="min-w-full px-2">
+              <div class="bg-navy p-10 rounded-lg text-white">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-8">
+                  <div class="max-w-2xl">
+                    <span class="text-gold font-bold text-[10px] uppercase tracking-[0.4em] mb-4 block">
+                      Upcoming Program
+                    </span>
+                    <h3 class="text-2xl font-bold mb-4">
+                      Port Operations & Compliance Workshop
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                      A focused training on port compliance, cargo handling standards,
+                      and regulatory best practices for maritime professionals.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                      <span class="text-[10px] font-bold uppercase px-3 py-1 bg-white/10 rounded">
+                        Maritime Stakeholders Forum
+                      </span>
+                      <span class="text-[10px] font-bold uppercase px-3 py-1 bg-white/10 rounded text-gold">
+                        Industry Partners
+                      </span>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <p class="text-4xl font-bold text-gold mb-1 italic">2026</p>
+                    <p class="text-[10px] uppercase tracking-widest text-slate-400">
+                      Quarter 2 Launch
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Navigation -->
+          <div class="flex justify-center gap-4 mt-6">
+            <button onclick="prevSlide()"
+              class="w-10 h-10 rounded-full border border-gold text-gold hover:bg-gold hover:text-navy transition">
+              ‹
+            </button>
+            <button onclick="nextSlide()"
+              class="w-10 h-10 rounded-full border border-gold text-gold hover:bg-gold hover:text-navy transition">
+              ›
+            </button>
+          </div>
+
+        </div>
+      </section>
+      <script>
+        let currentSlide = 0;
+        const slider = document.getElementById('programSlider');
+        const totalSlides = slider.children.length;
+        let autoSlideInterval;
+
+        function updateSlide() {
+          slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          updateSlide();
+          resetAutoSlide();
+        }
+
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          updateSlide();
+          resetAutoSlide();
+        }
+
+        function startAutoSlide() {
+          autoSlideInterval = setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlide();
+          }, 6000); // 6 seconds
+        }
+
+        function resetAutoSlide() {
+          clearInterval(autoSlideInterval);
+          startAutoSlide();
+        }
+
+        // Start auto sliding on page load
+        startAutoSlide();
+      </script>
+
+    </div>
+  </section>
+
+  <!-- Leadership Section -->
+  <section id="leadership" class="py-28 bg-white">
+    <div class="container mx-auto px-6">
+
+      <!-- Section Header -->
+      <div class="mb-24 max-w-3xl">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-navy mb-5">
+          Leadership
+        </h2>
+        <p class="text-base uppercase tracking-[0.35em] font-semibold text-slate-500">
+          Governance & Execution
+        </p>
+      </div>
+
+      <!-- Board of Trustees -->
+      <div class="mb-24">
+        <h3
+          class="text-base font-bold uppercase tracking-widest text-navy border-b-2 border-gold pb-4 inline-block mb-14">
+          Board of Trustees
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
+
+          <!-- Card -->
+          <div class="text-center">
+            <img src="assets/yusuff.jpeg" alt="Yusuf Yaro Danjuma"
+              class="mx-auto w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-2 border-slate-200 mb-6" />
+            <p class="font-bold text-navy text-lg md:text-xl">
+              Yusuf Yaro Danjuma
+            </p>
+            <p class="text-sm uppercase tracking-widest text-slate-500 mt-1">
+              Chairman
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/kasimm.jpeg" alt="Auwal Lawal Kasim"
+              class="mx-auto w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-2 border-slate-200 mb-6" />
+            <p class="font-bold text-navy text-lg md:text-xl">
+              Auwal Lawal Kasim
+            </p>
+            <p class="text-sm uppercase tracking-widest text-slate-500 mt-1">
+              Secretary
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/basirabo.jpeg" alt="Bashir Ibrahim Dabo"
+              class="mx-auto w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-2 border-slate-200 mb-6" />
+            <p class="font-bold text-navy text-lg md:text-xl">
+              Bashir Ibrahim Dabo
+            </p>
+            <p class="text-sm uppercase tracking-widest text-slate-500 mt-1">
+              Trustee
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Management Team -->
+      <div>
+        <h3
+          class="text-base font-bold uppercase tracking-widest text-navy border-b-2 border-gold pb-4 inline-block mb-14">
+          Management Team
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16">
+
+          <div class="text-center">
+            <img src="/images/leadership/shehu-aliyu.jpg" alt="Shehu Aliyu"
+              class="mx-auto w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 mb-6" />
+            <p class="font-bold text-navy text-lg md:text-xl">
+              Shehu Aliyu
+            </p>
+            <p class="text-sm uppercase tracking-widest text-gold font-bold mt-1">
+              Chief Executive Officer
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/musadiq.png" alt="Musaddiq Kasim Lawal"
+              class="mx-auto w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-2 border-slate-200 mb-6" />
+            <p class="font-bold text-navy text-lg md:text-xl">
+              Musaddiq Kasim Lawal
+            </p>
+            <p class="text-sm uppercase tracking-widest text-slate-500 mt-1">
+              Programs & Grant Manager
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img src="/images/leadership/martha-saleh.jpg" alt="Martha Saleh"
+              class="mx-auto w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-2 border-slate-200 mb-6" />
+            <p class="font-bold text-navy text-lg md:text-xl">
+              Martha Saleh
+            </p>
+            <p class="text-sm uppercase tracking-widest text-slate-500 mt-1">
+              Finance & Compliance Manager
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img src="/images/leadership/kaltum-iliyasu.jpg" alt="Kaltum Iliyasu"
+              class="mx-auto w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-2 border-slate-200 mb-6" />
+            <p class="font-bold text-navy text-lg md:text-xl">
+              Kaltum Iliyasu
+            </p>
+            <p class="text-sm uppercase tracking-widest text-slate-500 mt-1">
+              Communications & Advocacy Manager
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Partners Section -->
+  <section id="partners" class="section-padding bg-slate-50 border-y border-slate-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-navy mb-16">Ecosystem of Support</h2>
+
+      <div class="mb-20">
+        <p class="text-xs font-bold uppercase tracking-[0.4em] text-slate-400 mb-10">
+          Funding Partners
+        </p>
+        <div
+          class="flex flex-wrap justify-center gap-x-12 gap-y-8 opacity-70 grayscale hover:grayscale-0 transition-all">
+          <span class="text-sm font-bold text-navy">Reliant Anchor Logistics Ltd</span>
+          <span class="text-sm font-bold text-navy">Sea Transport Ltd</span>
+          <span class="text-sm font-bold text-navy">ALT Green Bunker Fuel Ltd</span>
+          <span class="text-sm font-bold text-navy">ALT Green Maritime Services Ltd</span>
+          <span class="text-sm font-bold text-navy">Edge Shipping Ltd</span>
+          <span class="text-sm font-bold text-navy">Cotidal Shipping Ltd</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 mb-20">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-[0.4em] text-slate-400 mb-6">
+            Travel & Organizing Partner
+          </p>
+          <span class="text-sm font-bold text-navy border border-slate-200 px-6 py-3 rounded inline-block">Quick Trips
+            Travel Agency Ltd</span>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-[0.4em] text-slate-400 mb-6">
+            Strategic Collaborator
+          </p>
+          <span
+            class="text-sm font-bold text-navy border border-slate-200 px-6 py-3 rounded inline-block text-gold">Bongas
+            Synergy Ltd</span>
+        </div>
+      </div>
+
+      <div class="pt-20 border-t border-slate-200">
+        <p class="text-xs font-bold uppercase tracking-[0.4em] text-slate-400 mb-10">
+          Institutional Alliances
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div class="p-6 border border-slate-200 rounded hover:border-gold transition-colors">
+            <p class="text-[10px] font-bold text-navy uppercase">
+              Optimus Bank
+              <img src="assets/opt.png" alt="Optimus Bank Logo" class="h-6 w-auto inline-block" />
+            </p>
+          </div>
+          <div class="p-6 border border-slate-200 rounded hover:border-gold transition-colors">
+            <p class="text-[10px] font-bold text-navy uppercase">
+              <img src="assets/daura.png" alt="Daura Logo" class="h-6 w-auto inline-block" />
+              Univ. of Daura
+            </p>
+          </div>
+          <div class="p-6 border border-slate-200 rounded hover:border-gold transition-colors">
+            <p class="text-[10px] font-bold text-navy uppercase">
+              <img src="assets/NCDMB.jfif" alt="NCDMB Logo" class="h-8 w-auto inline-block" />
+              NCDMB
+            </p>
+          </div>
+          <div class="p-6 border border-slate-200 rounded hover:border-gold transition-colors">
+            <p class="text-[10px] font-bold text-navy uppercase">
+              <img src="assets/NMDPRA.jfif" alt="NMDPRA Logo" class="h-8 w-auto inline-block" />
+              NMDPRA
+            </p>
+          </div>
+          <div class="p-6 border border-slate-200 rounded hover:border-gold transition-colors">
+            <p class="text-[10px] font-bold text-navy uppercase">
+              <img src="assets/CIOTA.jfif" alt="CIOTA Logo" class="h-8 w-auto inline-block" />
+              CIOTA
+            </p>
+          </div>
+          <div class="p-6 border border-slate-200 rounded hover:border-gold transition-colors">
+            <p class="text-[10px] font-bold text-navy uppercase">
+              <img src="assets/NITT.png" alt="NITT Logo" class="h-8 w-auto inline-block" />
+              NITT
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-navy text-white pt-24 pb-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-end">
+        <div>
+          <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
+          <div class="space-y-4 text-slate-400">
+            <p class="text-lg">reliantfoundation2@gmail.com</p>
+            <div class="bg-slate-800/40 rounded px-4 py-2 space-y-1 text-left">
+              <p class="text-xs font-semibold text-gold uppercase mb-1">
+                Departmental Contacts
+              </p>
+              <p>
+                <span class="font-semibold text-gold">Admin:</span>
+                <a href="mailto:admin@reliantfoundation.com" class="hover:text-gold">admin@reliantfoundation.com</a>
+              </p>
+              <p>
+                <span class="font-semibold text-gold">Programs:</span>
+                <a href="mailto:program@reliantfoundation.com" class="hover:text-gold">program@reliantfoundation.com</a>
+              </p>
+              <p>
+                <span class="font-semibold text-gold">Finance:</span>
+                <a href="mailto:Finance@reliantfoundation.com" class="hover:text-gold">Finance@reliantfoundation.com</a>
+              </p>
+            </div>
+            <p class="text-lg">+234 703 589 9928</p>
+            <address class="not-italic text-sm">
+              155a, Isale Eko Avenue<br />
+              Dolphin Estate, Ikoyi<br />
+              Lagos, Nigeria.
+            </address>
+          </div>
+        </div>
+        <div class="text-right">
+          <div class="mb-8">
+            <p class="text-[10px] uppercase tracking-widest text-gold font-bold">
+              Registration
+            </p>
+            <p class="text-xs text-slate-400">
+              IT Number: 8437902 | SCUML Registered
+            </p>
+          </div>
+          <p class="text-xs text-slate-500">
+            ©️ <span id="year"></span> Reliant Anchor Foundation
+          </p>
+          <script>
+            document.getElementById("year").textContent =
+              new Date().getFullYear();
+          </script>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
